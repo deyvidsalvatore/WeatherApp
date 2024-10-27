@@ -17,3 +17,11 @@
     </span>
   </form>
 </main>
+
+@if (weatherData) {
+  <app-weather-card [weatherData]="weatherData" />
+} @else {
+  <ng-template>
+    <p>Make an search with an value before, to see all data from location</p>
+  </ng-template>
+}

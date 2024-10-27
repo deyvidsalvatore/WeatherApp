@@ -6,10 +6,11 @@ import { Subject, takeUntil } from 'rxjs';
 
 import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch'
 import { FormsModule } from '@angular/forms';
+import { WeatherCardComponent } from "../../components/weather-card/weather-card.component";
 @Component({
   selector: 'app-weather-home',
   standalone: true,
-  imports: [FormsModule, FontAwesomeModule],
+  imports: [FormsModule, FontAwesomeModule, WeatherCardComponent],
   templateUrl: './weather-home.component.html',
   styleUrl: './weather-home.component.scss',
   providers: [WeatherService]
