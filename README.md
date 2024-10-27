@@ -1,5 +1,5 @@
 # WeatherApp
-Access to check: https://weatherapp-bhqt.onrender.com/weather
+Access to check: https://weatherapp-bhqt.onrender.com
 
 A simple and intuitive weather application built with Angular that utilizes the OpenWeatherMap API to provide real-time weather data for any city.
 ![alt text](docs/print1.png)
