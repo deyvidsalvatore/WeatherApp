@@ -1,0 +1,27 @@
+<main class="search">
+  <form #form="ngForm" (submit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Buscar localização"
+      name="city"
+      [(ngModel)]="initialCityName"
+
+    />
+    <span (click)="onSubmit()">
+      <fa-icon
+        animation="fade"
+        style="--fa-animation-duration: 5s; cursor: pointer;"
+        [size]="'lg'"
+        class="search-icon"
+        [icon]="searchIcon" />
+    </span>
+  </form>
+</main>
+
+@if (weatherData) {
+  <app-weather-card [weatherData]="weatherData" />
+} @else {
+  <ng-template>
+    <p>Make an search with an value before, to see all data from location</p>
+  </ng-template>
+}
